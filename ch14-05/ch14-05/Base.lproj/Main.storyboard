@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ch14_05" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Banana.png" translatesAutoresizingMaskIntoConstraints="NO" id="mqS-01-bOw">
+                                <rect key="frame" x="52" y="144" width="138" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="IoN-Yq-l8A" appends="YES" id="X0T-23-dYR"/>
+                                    <outletCollection property="gestureRecognizers" destination="4KX-QA-Vke" appends="YES" id="UW8-v0-x1g"/>
+                                    <outletCollection property="gestureRecognizers" destination="v4b-JF-5Yx" appends="YES" id="5TK-Km-G0v"/>
+                                    <outletCollection property="gestureRecognizers" destination="9ri-1j-UDG" appends="YES" id="ivr-og-Ow0"/>
+                                    <outletCollection property="gestureRecognizers" destination="T6i-f0-5bx" appends="YES" id="0G7-kW-ilJ"/>
+                                    <outletCollection property="gestureRecognizers" destination="xYP-f8-gF4" appends="YES" id="9XM-A7-rlP"/>
+                                </connections>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="myImageView" destination="mqS-01-bOw" id="9GK-l9-Has"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="IoN-Yq-l8A">
+                    <connections>
+                        <action selector="swipeRight:" destination="BYZ-38-t0r" id="eu4-KO-7Tf"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="down" id="4KX-QA-Vke">
+                    <connections>
+                        <action selector="swipeDown:" destination="BYZ-38-t0r" id="UcX-Hv-LK5"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="left" id="v4b-JF-5Yx">
+                    <connections>
+                        <action selector="swipeLeft:" destination="BYZ-38-t0r" id="nO0-o2-Soz"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="up" id="9ri-1j-UDG">
+                    <connections>
+                        <action selector="swipeUp:" destination="BYZ-38-t0r" id="ei5-LB-EWT"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="T6i-f0-5bx">
+                    <connections>
+                        <action selector="pan:" destination="BYZ-38-t0r" id="9vc-GO-w1J"/>
+                    </connections>
+                </panGestureRecognizer>
+                <pinchGestureRecognizer id="xYP-f8-gF4">
+                    <connections>
+                        <action selector="pinch:" destination="BYZ-38-t0r" id="EUK-dv-FGR"/>
+                    </connections>
+                </pinchGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="24.800000000000001" y="31.934032983508249"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Banana.png" width="1000" height="1000"/>
+    </resources>
+</document>
